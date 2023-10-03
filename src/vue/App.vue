@@ -11,4 +11,7 @@ export default {
 };
 </script>
 <style>
+.min-w-50 {
+  min-width: 50%;
+}
 </style>

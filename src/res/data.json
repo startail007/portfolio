@@ -80,6 +80,20 @@
     "tags": "F2E"
   },
   {
+    "title": "烘培ERP",
+    "content": "",
+    "img_url": "./assets/personal/baking.jpg",
+    "demo_url": "https://baking-cub8.onrender.com/",
+    "tags": "personal"
+  },
+  {
+    "title": "叫貨APP",
+    "content": "",
+    "img_url": "./assets/personal/orderAPP.jpg",
+    "demo_url": "https://www.figma.com/file/naiDWWUdB61uBWbCrH0Ejf/%E5%8F%AB%E8%B2%A8APP?type=design&node-id=5%3A175&mode=design&t=l9TnXDjMxkSukapS-1",
+    "tags": "personal"
+  },
+  {
     "title": "滾動效果",
     "content": "",
     "img_url": "./assets/personal/scrollEffect.jpg",

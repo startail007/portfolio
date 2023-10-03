@@ -13,7 +13,8 @@
       <div class="d-flex justify-content-start">
         <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
         <a
-          class="flex-fill btn btn-sm btn-secondary mr-2"
+          v-if="code_url"
+          class="flex-fill btn btn-sm btn-secondary mr-2 min-w-50"
           role="button"
           :href="code_url"
           target="_blank"
@@ -21,7 +22,8 @@
           >檢視程式碼</a
         >
         <a
-          class="flex-fill btn btn-sm btn-success"
+          v-if="demo_url"
+          class="flex-fill btn btn-sm btn-success min-w-50"
           role="button"
           :href="demo_url"
           target="_blank"
