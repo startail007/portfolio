@@ -81,14 +81,14 @@
   },
   {
     "title": "烘培ERP",
-    "content": "",
+    "content": "vuejs + vuetify + nodejs + firebase",
     "img_url": "./assets/personal/baking.jpg",
     "demo_url": "https://baking-cub8.onrender.com/",
     "tags": "personal"
   },
   {
     "title": "叫貨APP",
-    "content": "",
+    "content": "figma + flutter",
     "img_url": "./assets/personal/orderAPP.jpg",
     "demo_url": "https://www.figma.com/file/naiDWWUdB61uBWbCrH0Ejf/%E5%8F%AB%E8%B2%A8APP?type=design&node-id=5%3A175&mode=design&t=l9TnXDjMxkSukapS-1",
     "tags": "personal"
@@ -143,7 +143,7 @@
   },
   {
     "title": "沃羅諾伊圖",
-    "content": "",
+    "content": "沃羅諾伊圖形 + 德勞內三角分割",
     "img_url": "./assets/personal/voronoiDiagram.jpg",
     "code_url": "https://github.com/virtools/voronoiDiagram",
     "demo_url": "https://virtools.github.io/voronoiDiagram/",
@@ -193,7 +193,7 @@
   },
   {
     "title": "粒子碰撞(四元樹演算)",
-    "content": "",
+    "content": "quadtree + 球體物理碰撞",
     "img_url": "./assets/personal/particleCollision.jpg",
     "code_url": "https://github.com/virtools/particleCollision/",
     "demo_url": "https://virtools.github.io/particleCollision/dist/particleCollision-quadTree/",
@@ -201,7 +201,7 @@
   },
   {
     "title": "粒子文字效果",
-    "content": "",
+    "content": "webgl",
     "img_url": "./assets/personal/particleText.jpg",
     "code_url": "https://github.com/virtools/particleText/",
     "demo_url": "https://virtools.github.io/particleText/",

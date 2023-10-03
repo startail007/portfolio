@@ -9,7 +9,7 @@
     ></div>
     <div class="card-body">
       <h6 class="card-title text-center">{{ title }}</h6>
-      <p class="card-text">{{ content }}</p>
+      <p class="card-text text-center">{{ content }}</p>
       <div class="d-flex justify-content-start">
         <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
         <a
@@ -54,6 +54,12 @@ export default {
   padding-bottom: 52%;
   background-color: #ddd;
   background-size: cover;
+}
+.card-text {
+  min-height: 2em;
+  font-size: 12px;
+  color: #81a5b9;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 576px) {
 }
