@@ -68,7 +68,19 @@
         <Bg></Bg>
         <div class="position-relative">
           <div class="title-sticky">
-            <div class="container">
+            <div class="blurBg">
+              <div
+                v-for="(n, index) in 10"
+                class="blurBgItem"
+                :style="{
+                  'backdrop-filter': `blur(${Math.round(100 * 3 * Math.pow(1 - index / 10, 2)) / 100}px)`,
+                  height: `${100 / 10}%`,
+                  top: `${index * (100 / 10)}%`,
+                }"
+              ></div>
+            </div>
+            <div class="title-sticky-bg"></div>
+            <div class="container position-relative">
               <div class="px-1 pt-3 pb-1">
                 <h3>個人作品</h3>
               </div>
@@ -262,11 +274,17 @@ body {
   /* text-shadow: 0px 0px 5px #fff; */
   font-weight: bold;
   letter-spacing: 0.1em;
-  background-image: linear-gradient(180deg, #fffffff7 0%, #ffffff99 50%, #ffffff00 100%);
   padding-bottom: 30px;
   border-top: 1px solid #bfcde7;
-  backdrop-filter: blur(1px);
+  /* backdrop-filter: blur(1px); */
   text-shadow: 1px 3px 5px #00000033;
+}
+.title-sticky-bg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #fffffff7 0%, #ffffff99 50%, #ffffff00 100%);
 }
 .table-title {
   white-space: nowrap;
@@ -293,6 +311,17 @@ body {
 table td {
   text-align: left;
   vertical-align: initial;
+}
+.blurBg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.blurBgItem {
+  position: absolute;
+  display: block;
+  width: 100%;
 }
 /* #section_personal .title-sticky {
   color: #760c9b;
