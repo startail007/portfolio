@@ -11,12 +11,93 @@
           </div>
         </div>
       </header>
+      <section id="section_introduction" class="position-relative">
+        <div class="container position-relative">
+          <!-- <div class="title px-1 py-3">
+            <h3>簡介</h3>
+          </div> -->
+          <div class="row px-2 py-5">
+            <div class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center px-2 py-4">
+              <div class="myIcon"></div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-9 px-2 py-4">
+              <div class="word">
+                <h2>
+                  <p>Hi,我叫阿偉</p>
+                </h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="table-title">職業：</td>
+                      <td class="table-content">
+                        <div>前端工程師</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-title">技能：</td>
+                      <td class="table-content">
+                        <div class="mt-1">Sass + PostCSS 規劃響應式網頁版型</div>
+                        <div class="mt-1">jQuery Plugin 整合第三方插件動畫效果</div>
+                        <div class="mt-1">AJAX/JSON 搭配 vue.js 設計 SPA 架構</div>
+                        <div class="mt-1">nodejs 後端 api 建置及 CRUD 作業結合 firebase , mysql 資料庫</div>
+                        <div class="mt-1">flutter 跨平台 APP 開發</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-title">連結：</td>
+                      <td class="table-content">
+                        <a href="https://github.com/virtools" target="_blank">github</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- <h6>職業：前端工程師</h6>
+                <h6 class="mb-2">技能：</h6>
+                <div class="detail ml-2">
+                  <div>html5互動網頁設計</div>
+                  <div class="mt-1">vuejs + vuetify 網頁建置</div>
+                  <div class="mt-1">nodejs api建置及CRUD作業</div>
+                  <div class="mt-1">flutter APP開發</div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_personal" class="position-relative">
+        <Bg></Bg>
+        <div class="position-relative">
+          <div class="title-sticky">
+            <div class="container">
+              <div class="px-1 pt-3 pb-1">
+                <h3>個人作品</h3>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="mt-4">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4" v-for="item in personal_list" :key="item.id">
+                  <Card
+                    :title="item.title"
+                    :content="item.content"
+                    :img_url="item.img_url"
+                    :code_url="item.code_url"
+                    :demo_url="item.demo_url"
+                    img_align="center center"
+                  ></Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="section_F2E" class="position-relative">
         <div id="section_F2E_bg"></div>
         <div class="container position-relative">
           <div class="panel_L">
             <div class="box">
-              <div class="title-sticky p-3">
+              <div class="title p-3">
                 <h2>前端修練精神時光屋-第二屆</h2>
               </div>
               <div class="p-3">
@@ -59,28 +140,7 @@
           </div>
         </div>
       </section>
-      <section id="section_personal" class="position-relative">
-        <Bg></Bg>
-        <div class="container position-relative">
-          <div class="title-sticky p-3">
-            <h2>個人</h2>
-          </div>
-          <div class="mt-4">
-            <div class="row">
-              <div class="col-md-6 col-lg-4 col-xl-4" v-for="item in personal_list" :key="item.id">
-                <Card
-                  :title="item.title"
-                  :content="item.content"
-                  :img_url="item.img_url"
-                  :code_url="item.code_url"
-                  :demo_url="item.demo_url"
-                  img_align="center center"
-                ></Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <footer class="position-relative">
         <div class="info d-flex align-items-end">
           <div class="container p-3">
@@ -191,13 +251,52 @@ body {
   color: #2373a1;
   text-decoration: underline;
 }
+.title {
+  text-shadow: 1px 3px 5px #00000033;
+}
 .title-sticky {
-  /*position: sticky;
+  position: sticky;
   top: 56px;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.2);
-  text-shadow: 0px 0px 5px #fff;*/
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  /* text-shadow: 0px 0px 5px #fff; */
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background-image: linear-gradient(180deg, #fffffff7 0%, #ffffff99 50%, #ffffff00 100%);
+  padding-bottom: 30px;
+  border-top: 1px solid #bfcde7;
+  backdrop-filter: blur(1px);
+  text-shadow: 1px 3px 5px #00000033;
 }
+.table-title {
+  white-space: nowrap;
+  /* padding-right: 1em; */
+  text-align: right;
+}
+.table-content {
+  /* color: #81a5b9; */
+  font-size: 14px;
+}
+.word {
+  letter-spacing: 0.1em;
+}
+.myIcon {
+  background-image: url("~@img/myIcon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  border: 1px solid #ccc;
+}
+table td {
+  text-align: left;
+  vertical-align: initial;
+}
+/* #section_personal .title-sticky {
+  color: #760c9b;
+} */
 #section_F2E {
   /*background-color: #dee3e8;*/
   /* background-image: linear-gradient(
