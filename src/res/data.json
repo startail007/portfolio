@@ -119,7 +119,7 @@
   },
   {
     "title": "圖片搜尋",
-    "content": "",
+    "content": "Unsplash API串接",
     "img_url": "./assets/personal/photoSearch.jpg",
     "code_url": "https://github.com/virtools/photoSearch/",
     "demo_url": "https://virtools.github.io/photoSearch/",
@@ -127,10 +127,10 @@
   },
   {
     "title": "電流",
-    "content": "",
+    "content": "webgl + shader",
     "img_url": "./assets/personal/electricity.jpg",
-    "code_url": "https://github.com/virtools/electricity",
-    "demo_url": "https://virtools.github.io/electricity/demo3/",
+    "code_url": "https://github.com/virtools/electricity_webgl",
+    "demo_url": "https://virtools.github.io/electricity_webgl/dist/14.model_3/",
     "tags": "personal"
   },
   {
